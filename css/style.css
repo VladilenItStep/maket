@@ -3,6 +3,11 @@
 html {
     font-family: 'Montserrat Alternates', 'Tahoma', sans-serif;
     font-size: 10px;
+    color: #24252E;
+}
+
+.app-content-wrapper {
+    padding: 0px 8rem;
 }
 
 .btn {
@@ -52,12 +57,13 @@ html {
     background-color: white;
 }
 
-.header {
+.header-content-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #E2E8F7;
-    padding: 32px 80px;
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
 }
 
 .header__list {
@@ -82,4 +88,82 @@ html {
     height: 0.4rem;
     background-color: #EE3124;
     margin: 0 40px;
+}
+
+.link:visited {}
+
+.link:focus {
+    outline: none;
+    /* outline: solid 10px red; */
+}
+
+.link:hover {
+    color: #EE3124;
+}
+
+.link:active {
+    color: navy;
+}
+
+.logo {
+    width: max-content;
+    flex-shrink: 0;
+}
+
+.logo__icon {
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #A1BCE8;
+}
+
+.avatar__icon {
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.comment__user-info {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.comment__user-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.comment__user-name {
+    font-weight: 500;
+}
+
+.comment__user-job {
+    color: #7F7F7F;
+}
+
+.comment-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 397px;
+    gap: 2rem;
+}
+
+.comment {
+    border: 1px solid #E2E8F7;
+    padding: 40px;
+    max-width: 477px;
+    border-radius: 40px;
 }
