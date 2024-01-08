@@ -238,3 +238,38 @@ html {
     top: -4px;
     left: 4px;
 }
+
+.icon_type_heart .icon__image-container {
+    width: 90px;
+    height: 78px;
+}
+
+.icon_type_arrow .icon__circle,
+.icon_type_square .icon__circle {
+    background-color: #A1BCE8;
+}
+
+.icon_type_arrow .icon__image-container {
+    width: 83px;
+    height: 74px;
+    top: -7px;
+    left: 16px;
+}
+
+.icon_type_square .icon__image-container {
+    width: 76px;
+    height: 76px;
+    top: -8px;
+    left: 24px;
+}
+
+.card {
+    width: 262px;
+    height: 224px;
+    border: 1px solid black;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+}
