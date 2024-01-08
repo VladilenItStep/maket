@@ -166,4 +166,75 @@ html {
     padding: 40px;
     max-width: 477px;
     border-radius: 40px;
+    position: relative;
+}
+
+.comment__quotes {
+    width: 34px;
+    height: 34px;
+    background-color: #FBBDAA;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: -17px;
+}
+
+.comment__quotes::before {
+    content: '';
+    display: block;
+    width: 34px;
+    height: 34px;
+    background-image: url('../assets/img/quotes.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -4px;
+    left: 4px;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.icon__circle {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: #FBBDAA;
+    position: relative;
+}
+
+.icon__image-container {
+    width: 80px;
+    height: 55px;
+    position: absolute;
+    top: -8px;
+    left: 8px;
+}
+
+.icon__image {
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.icon_size_sm {
+    width: 40px;
+    height: 40px;
+}
+
+.icon_size_sm .icon__circle {
+    width: 34px;
+    height: 34px;
+}
+
+.icon_size_sm .icon__image-container {
+    width: 32px;
+    height: 32px;
+    top: -4px;
+    left: 4px;
 }
