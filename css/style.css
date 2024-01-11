@@ -167,6 +167,7 @@ html {
     max-width: 477px;
     border-radius: 40px;
     position: relative;
+    background-color: white;
 }
 
 .comment__quotes {
@@ -263,13 +264,131 @@ html {
     left: 24px;
 }
 
+.icon_type_start .icon__image-container {
+    width: 85px;
+    height: 81px;
+    top: -16px;
+    left: 15px;
+}
+
 .card {
     width: 262px;
     height: 224px;
-    border: 1px solid black;
-    margin: 0 auto;
+    border: 1px solid #E2E8F7;
+    background-color: #F6FCFF;
+    border-radius: 40px;
+}
+
+.card__icon {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.card__text {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.main-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E2E8F7;
+}
+
+.title {
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 6.3rem;
+    text-transform: uppercase;
+}
+
+.title_size_sm {
+    line-height: 4.9rem;
+    font-size: 4rem;
+    text-transform: none
+}
+
+.title__text_red {
+    color: #EE3124;
+}
+
+.main__text {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3.6rem;
+}
+
+.main__image-container {
+    width: 605px;
+    height: 605px;
+}
+
+.main__image {
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.main__info-container {
+    width: 561px;
     display: flex;
     flex-direction: column;
+    gap: 40px;
+}
+
+.main__btn {
+    width: 227px;
+}
+
+.advantage-content-wrapper {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.advantage-card-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comments-content-wrapper {
+    background-color: #E2E8F7;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
     justify-content: center;
-    align-items: space-around;
+    gap: 50px;
+    position: relative;
+}
+
+.comments__arrow-left {
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: 20px;
+}
+
+.comments__arrow-left::after {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 1px;
+    background: red;
+    transform: translateY(-6px) rotate(-23deg) translateX(0px)
+}
+
+.comments__arrow-left::before {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 1px;
+    background: red;
+    transform: translateY(6px) rotate(23deg) translateX(0px);
 }
