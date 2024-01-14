@@ -435,3 +435,34 @@ html {
     background-color: #24252E;
     transform: translateY(2px) rotate(-45deg) translateX(0px);
 }
+
+.vacancies-content-wrapper {
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+
+.vacancy-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #E2E8F7;
+}
+
+.vacancy-item__info-wrapper {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
+
+.vacancy-item__job {
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.vacancy-item__location {
+    font-weight: 400;
+    color: #7F7F7F;
+}
