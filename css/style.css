@@ -8,7 +8,7 @@ html {
 }
 
 .app-content-wrapper {
-    padding: 0px 8rem;
+    padding: 0 8rem;
 }
 
 .btn {
@@ -59,6 +59,7 @@ html {
 }
 
 .button_type_phone {
+    display: none;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -67,6 +68,7 @@ html {
     background-image: url('../assets/img/call.svg');
     background-repeat: no-repeat;
     background-position: center;
+    flex-shrink: 0;
 }
 
 .button_type_phone:hover {
@@ -82,12 +84,18 @@ html {
     padding-bottom: 3.2rem;
 }
 
+.header__navigation {
+    width: 100%;
+    max-width: 702px;
+}
+
 .header__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 1.8rem;
     font-weight: 400;
+    flex-wrap: wrap;
 }
 
 .header__list-item {
@@ -340,8 +348,8 @@ html {
 }
 
 .main__image-container {
-    width: 605px;
-    height: 605px;
+    max-width: 605px;
+    max-height: 605px;
 }
 
 .main__image {
@@ -372,6 +380,8 @@ html {
 .advantage-card-wrapper {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .comments-content-wrapper {
@@ -505,4 +515,125 @@ html {
     width: 260px;
     padding: 12px 20px;
     border-radius: 50px;
+}
+
+@media screen and (max-width: 1230px) {
+    .app-content-wrapper {
+        padding-left: 4.4rem;
+        padding-right: 4.4rem;
+    }
+
+    .header__list-item + .header__list-item::before {
+        margin: 0 30px;
+    }
+
+    .button_type_phone {
+        display: block;
+    }
+
+    .header__btn {
+        display: none;
+    }
+
+    .main-content-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 1110px) {
+
+    .button_type_phone {
+        position: absolute;
+        right: 40px;
+        top: 20px;
+    }
+
+    .header-content-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 46px;
+    }
+
+    .advantage-content-wrapper {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        gap: 40px;
+    }
+
+    .vacancies-content-wrapper {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        gap: 40px;
+    }
+
+    .comments-content-wrapper {
+        padding-top: 4rem;
+    }
+
+    .footer-content-wrapper {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        gap: 40px;
+    }
+
+    .form {
+        flex-direction: column;
+        max-width: 340px;
+        border-radius: 20px;
+        padding: 40px;
+        align-self: center;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .advantage-card-wrapper {
+        justify-content: center;
+    }
+
+    .vacancy-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .vacancy-item .btn {
+        width: 334px;
+    }
+
+    .comments-content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .app-content-wrapper {
+        padding: 2rem;
+    }
+
+    .title {
+        font-size: 3rem;
+        line-height: 3.6rem;
+    }
+
+    .main__text {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+
+    .header__navigation {
+        display: none;
+    }
+
+    .main__info-container {
+        gap: 20px;
+    }
+
+    .main__info-container .btn {
+        width: 100%;
+    }
+
 }
