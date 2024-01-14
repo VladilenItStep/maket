@@ -466,3 +466,28 @@ html {
     font-weight: 400;
     color: #7F7F7F;
 }
+
+.footer-content-wrapper {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border-radius: 100px;
+    padding: 40px 77px;
+    background: #24252E;
+}
+
+.form input {
+    outline: none;
+    width: 260px;
+    padding: 12px 20px;
+    border-radius: 50px;
+}
