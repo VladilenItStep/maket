@@ -5,6 +5,7 @@ html {
     font-family: 'Montserrat Alternates', 'Tahoma', sans-serif;
     font-size: 10px;
     color: #24252E;
+    scroll-behavior: smooth;
 }
 
 .app-content-wrapper {
@@ -520,6 +521,7 @@ html {
 
 .burger {
     display: none;
+    cursor: pointer;
 }
 
 .burger__container {
