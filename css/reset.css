@@ -9,8 +9,13 @@ button,
 input,
 textarea {
     font: inherit;
+    color: inherit;
 }
 
 ul {
     list-style-type: none;
+}
+
+a {
+    text-decoration: none;
 }
