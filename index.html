@@ -8,180 +8,246 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600&family=Sancreek&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/style.css">
-    <title>ПОДЕЛИ ntcn</title>
+    <title>ПОДЕЛИ</title>
 </head>
-
 <body>
-    <header class="header">
-        <div class="app-content-wrapper header-content-wrapper">
-            <div class="logo">
-                <img src="assets/img/Logo.svg" alt="logo" class="logo__icon">
+<header class="header">
+    <div class="app-content-wrapper header-content-wrapper">
+        <div class="burger">
+            <div class="burger__container">
+                <div class="burger__line"></div>
+                <input type="checkbox" class="burger__checkbox">
             </div>
-            <nav class="header__navigation">
-                <ul class="header__list">
-                    <li class="header__list-item">
-                        <a href="#" class="link header__list-item-link">о нас</a>
-                    </li>
-                    <li class="header__list-item">
-                        <a href="#" class="link header__list-item-link">преимущества</a>
-                    </li>
-                    <li class="header__list-item">
-                        <a href="#" class="link header__list-item-link">вакансии</a>
-                    </li>
-                    <li class="header__list-item">
-                        <a href="#" class="link header__list-item-link">контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="btn btn_theme_secondary header__btn">Позвонить</button>
-            <button class="btn btn_theme_primary btn_type_phone"></button>
 
         </div>
-    </header>
-    <main class="main">
-        <div class="app-content-wrapper main-content-wrapper">
-            <div class="main__info-container">
-                <h1 class="title">Стань частью <span class="title__text_red">команды</span>!</h1>
-                <p class="main__text">Мы делаем все, чтобы сотрудники росли, развивались и получали удовольствие.</p>
-                <button class="btn btn_theme_primary main__btn">Оставить заявку</button>
-
-
-
-            </div>
-            <div class="main__image-container">
-                <img src="./assets/img/img.svg" class="main__image" alt="icon">
-            </div>
+        <div class="logo">
+            <img src="assets/img/Logo.svg" alt="logo" class="logo__icon">
         </div>
-    </main>
-    <section class="advantage">
-        <div class="app-content-wrapper advantage-content-wrapper">
+        <nav class="header__navigation">
+            <ul class="header__list">
+                <li class="header__list-item">
+                    <a href="#mainAnchor" class="link header__list-item-link">о нас</a>
+                </li>
+                <li class="header__list-item">
+                    <a href="#advantageAnchor" class="link header__list-item-link">преимущества</a>
+                </li>
+                <li class="header__list-item">
+                    <a href="#vacanciesAnchor" class="link header__list-item-link">вакансии</a>
+                </li>
+                <li class="header__list-item">
+                    <a href="#footerAnchor" class="link header__list-item-link">форма</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="btn btn_theme_secondary header__btn">Позвонить</button>
+        <button class="btn button_type_phone btn_theme_primary"></button>
 
-            <h2 class="title title_size_sm">Почему работать в <span class="title__text_red">подели</span>- круто?</h1>
+    </div>
+</header>
+<main id="mainAnchor" class="main">
+    <div class="app-content-wrapper main-content-wrapper">
+        <div class="main__info-container">
+            <h1 class="title">Стань частью <span class="title__text_red">команды</span>!</h1>
+            <p class="main__text">Мы делаем все, чтобы сотрудники росли, развивались и получали удовольствие.</p>
+            <button class="btn btn_theme_primary main__btn">Оставить заявку</button>
 
-                <div class="advantage-card-wrapper">
+        </div>
+        <div class="main__image-container">
+            <img src="./assets/img/img.svg" class="main__image" alt="icon">
+        </div>
+    </div>
+</main>
+<section id="advantageAnchor" class="advantage">
+    <div class="app-content-wrapper advantage-content-wrapper">
+
+        <h2 class="title title_size_sm">Почему работать в <span class="title__text_red">подели</span>- круто?</h2>
+
+        <div class="advantage-card-wrapper">
 
 
-                    <div class="card">
-                        <div class="icon icon_type_arrow card__icon">
-                            <div class="icon__circle">
-                                <div class="icon__image-container">
-                                    <img src="./assets/img/arrow.svg" class="icon__image" alt="icon">
-                                </div>
-                            </div>
+            <div class="card">
+                <div class="icon icon_type_arrow card__icon">
+                    <div class="icon__circle">
+                        <div class="icon__image-container">
+                            <img src="./assets/img/arrow.svg" class="icon__image" alt="icon">
                         </div>
-                        <p class="card__text">Возможности роста неограничены</p>
                     </div>
-
-                    <div class="card">
-                        <div class="icon icon_type_heart card__icon">
-                            <div class="icon__circle">
-                                <div class="icon__image-container">
-                                    <img src="./assets/img/heart.svg" class="icon__image" alt="icon">
-                                </div>
-                            </div>
-                        </div>
-                        <p class="card__text">Поддержка и выручка</p>
-                    </div>
-
-                    <div class="card">
-                        <div class="icon icon_type_square card__icon">
-                            <div class="icon__circle">
-                                <div class="icon__image-container">
-                                    <img src="./assets/img/square.svg" class="icon__image" alt="icon">
-                                </div>
-                            </div>
-                        </div>
-                        <p class="card__text">ни дня без новых знаний</p>
-                    </div>
-
-                    <div class="card">
-                        <div class="icon icon_type_start card__icon">
-                            <div class="icon__circle">
-                                <div class="icon__image-container">
-                                    <img src="./assets/img/star.svg" class="icon__image" alt="icon">
-                                </div>
-                            </div>
-                        </div>
-                        <p class="card__text">Премии и бонусы для лучших сотрудников</p>
-                    </div>
-
                 </div>
-        </div>
-    </section>
+                <p class="card__text">Возможности роста неограничены</p>
+            </div>
 
-
-
-
-    <section class="comments">
-
-        <div class="app-content-wrapper comments-content-wrapper">
-
-            <div class="comment">
-                <div class="comment-wrapper">
-                    <div class="comment__user-info">
-                        <div class="avatar">
-                            <img src="assets/img/female_avatar.png" alt="female_avatar" class="avatar__icon">
+            <div class="card">
+                <div class="icon icon_type_heart card__icon">
+                    <div class="icon__circle">
+                        <div class="icon__image-container">
+                            <img src="./assets/img/heart.svg" class="icon__image" alt="icon">
                         </div>
-
-                        <div class="comment__user-info-wrapper">
-                            <p class="comment__user-name text">Ольга Березь</p>
-                            <p class="comment__user-job text">Менеджер по продажам</p>
-                        </div>
-
                     </div>
+                </div>
+                <p class="card__text">Поддержка и выручка</p>
+            </div>
 
-                    <p class="comment__text text">
-                        Придя в подели, я сразу поняла - это команда мечты. Тут все на уровне: клиенты, сотрудники, и , конечно условия!
+            <div class="card">
+                <div class="icon icon_type_square card__icon">
+                    <div class="icon__circle">
+                        <div class="icon__image-container">
+                            <img src="./assets/img/square.svg" class="icon__image" alt="icon">
+                        </div>
+                    </div>
+                </div>
+                <p class="card__text">ни дня без новых знаний</p>
+            </div>
+
+            <div class="card">
+                <div class="icon icon_type_start card__icon">
+                    <div class="icon__circle">
+                        <div class="icon__image-container">
+                            <img src="./assets/img/star.svg" class="icon__image" alt="icon">
+                        </div>
+                    </div>
+                </div>
+                <p class="card__text">Премии и бонусы для лучших сотрудников</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section id='vacanciesAnchor' class="vacancies">
+
+    <div class="app-content-wrapper vacancies-content-wrapper">
+        <h2 class="title title_size_sm">Свежие <span class="title__text_red">вакансии</span></h2>
+        <div class="vacancies__list">
+            <div class="vacancy-item">
+                <div class="vacancy-item__info-wrapper">
+                    <p class="vacancy-item__job">
+                        Менеджер по продажам
+                    </p>
+                    <p class="vacancy-item__location">
+                        г. Москва
                     </p>
                 </div>
-                <div class="comment__quotes"> </div>
+                <button class="btn btn_theme_secondary">Подробнее</button>
             </div>
 
-            <div class="comment">
-                <div class="comment-wrapper">
-                    <div class="comment__user-info">
-                        <div class="avatar">
-                            <img src="assets/img/female_avatar.png" alt="female_avatar" class="avatar__icon">
-                        </div>
-
-                        <div class="comment__user-info-wrapper">
-                            <p class="comment__user-name text">Ольга Березь</p>
-                            <p class="comment__user-job text">Менеджер по продажам</p>
-                        </div>
-
-                    </div>
-
-                    <p class="comment__text text">
-                        Придя в подели, я сразу поняла - это команда мечты. Тут все на уровне: клиенты, сотрудники, и , конечно условия!
+            <div class="vacancy-item">
+                <div class="vacancy-item__info-wrapper">
+                    <p class="vacancy-item__job">
+                        Маркетолог
+                    </p>
+                    <p class="vacancy-item__location">
+                        г. Санкт-Петербург
                     </p>
                 </div>
-                <div class="comment__quotes"> </div>
+                <button class="btn btn_theme_secondary">Подробнее</button>
             </div>
 
-
-            <div class="comment__controllers-wrapper">
-                <div class="comments__arrow comments__arrow_left"></div>
-                <div class="comments__arrow comments__arrow_right"></div>
+            <div class="vacancy-item">
+                <div class="vacancy-item__info-wrapper">
+                    <p class="vacancy-item__job">
+                        Бухгалтер
+                    </p>
+                    <p class="vacancy-item__location">
+                        г. Нижний новгород
+                    </p>
+                </div>
+                <button class="btn btn_theme_secondary">Подробнее</button>
             </div>
 
+            <div class="vacancy-item">
+                <div class="vacancy-item__info-wrapper">
+                    <p class="vacancy-item__job">
+                        Менеджер по рекламе
+                    </p>
+                    <p class="vacancy-item__location">
+                        г. Калининград
+                    </p>
+                </div>
+                <button class="btn btn_theme_secondary">Подробнее</button>
+            </div>
 
-
+            <div class="vacancy-item">
+                <div class="vacancy-item__info-wrapper">
+                    <p class="vacancy-item__job">
+                        Дизайнер
+                    </p>
+                    <p class="vacancy-item__location">
+                        г. Москва
+                    </p>
+                </div>
+                <button class="btn btn_theme_secondary">Подробнее</button>
+            </div>
         </div>
 
 
-    </section>
+    </div>
+</section>
+<section id="commentsAnchor" class="comments">
+
+    <div class="app-content-wrapper comments-content-wrapper">
+        <div class="comment">
+            <div class="comment-wrapper">
+                <div class="comment__user-info">
+                    <div class="avatar">
+                        <img src="assets/img/female_avatar.png" alt="female_avatar" class="avatar__icon">
+                    </div>
+
+                    <div class="comment__user-info-wrapper">
+                        <p class="comment__user-name text">Ольга Березь</p>
+                        <p class="comment__user-job text">Менеджер по продажам</p>
+                    </div>
+
+                </div>
+
+                <p class="comment__text text">
+                    Придя в подели, я сразу поняла - это команда мечты. Тут все на уровне: клиенты, сотрудники, и ,
+                    конечно условия!
+                </p>
+            </div>
+            <div class="comment__quotes"></div>
+        </div>
+        <div class="comment">
+            <div class="comment-wrapper">
+                <div class="comment__user-info">
+                    <div class="avatar">
+                        <img src="assets/img/female_avatar.png" alt="female_avatar" class="avatar__icon">
+                    </div>
+
+                    <div class="comment__user-info-wrapper">
+                        <p class="comment__user-name text">Ольга Березь</p>
+                        <p class="comment__user-job text">Менеджер по продажам</p>
+                    </div>
+
+                </div>
+
+                <p class="comment__text text">
+                    Придя в подели, я сразу поняла - это команда мечты. Тут все на уровне: клиенты, сотрудники, и ,
+                    конечно условия!
+                </p>
+            </div>
+            <div class="comment__quotes"></div>
+        </div>
+        <div class="comments__controllers-wrapper">
+            <div class="comments__arrow comments__arrow_left"></div>
+            <div class="comments__arrow comments__arrow_right"></div>
+        </div>
+    </div>
+
+</section>
+<footer id="footerAnchor" class="footer">
+    <div class="app-content-wrapper footer-content-wrapper">
+        <h2 class="title title_size_sm">Будем рады видеть вас в <span class="title__text_red">подели!</span></h2>
+
+        <p class="text">Оставьте ваши контактные данные и мы обязательно ответим!</p>
 
 
-
-
-    <!-- <button class="btn btn_theme_primary">Оставить заявку</button>
-    <button class="btn btn_theme_primary" disabled>Оставить заявку</button>
-
-
-
-    <button class="btn btn_theme_secondary">Оставить заявку</button>
-    <button class="btn btn_theme_secondary" disabled>Оставить заявку</button> -->
-
+        <form action="#" id="form" class="form">
+            <input type="text" name="name" id="name" placeholder="Имя">
+            <input type="text" name="secondName" id="secondName" placeholder="Фамилия">
+            <input type="tel" name="phone" id="phone" placeholder="Фамилия">
+            <button form="form" class="btn btn_theme_primary">Оставить заявку</button>
+        </form>
+    </div>
+</footer>
 
 
 </body>
